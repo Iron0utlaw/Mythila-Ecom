@@ -5,9 +5,27 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
+import {cat} from '../utils/cat'
 
 const FeaturedProducts = () => {
-  return <h4>featured products</h4>
+  const {product_loading:loading,products_error:error,featured_products:featured} = useProductsContext();
+  if(loading){
+    return <Loading/>
+  }
+  if(error){
+    return <Error/>
+  }
+  return <Wrapper className='section'>
+    <div className='title'>
+      <h2>Featured Products</h2>
+      <div className='underline'></div>
+    </div>
+    <div className='section-center featured'>
+      {cat.map((products) => {
+        return <Product key={products.id} {...products}/>
+      })}
+    </div>
+  </Wrapper>
 }
 
 const Wrapper = styled.section`
