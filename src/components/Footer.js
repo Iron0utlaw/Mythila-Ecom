@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 const Footer = () => {
-  return <h4>footer</h4>
+  return <h4>footer ohh bhai</h4>
 }
 
 const Wrapper = styled.footer`
