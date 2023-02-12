@@ -1,17 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroBcg from '../assets/Artboard.png'
+import heroBcg2 from '../assets/Artboard2.png'
 
 const Hero = () => {
   return <Wrapper className='section-center'>
     <article className='content'>
       <h1>Desgin your <br/>comfort zone</h1>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-      
+      <Link to='/products' className='btn hero-btn'>Shop Now</Link>
     </article>
-
+<articlr className='img-container'>
+  <img src={heroBcg} className="main-img"></img>
+  <img src={heroBcg2} className="accent-img"></img>
+</articlr>
   </Wrapper>
 }
 

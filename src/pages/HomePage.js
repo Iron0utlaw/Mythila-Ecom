@@ -1,5 +1,6 @@
-import React from 'react'
-import { FeaturedProducts, Hero, Services, Contact } from '../components'
+import React from 'react';
+import { FeaturedProducts, Hero, Services, Contact } from '../components';
+import {motion} from  'framer-motion';
 const HomePage = () => {
   return <motion.main
   initial={{opacity: 0}}
