@@ -25,7 +25,9 @@ const Wrapper = styled.section`
     display: block;
     border-radius: var(--radius);
     height: 500px;
-    object-fit: cover;
+    object-fit: center;
+    
+
   }
   p {
     line-height: 2;
