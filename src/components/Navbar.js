@@ -50,11 +50,11 @@ const NavContainer = styled.nav`
     justify-content: space-between;
     img {
       max-width:230px;
-      max-height:80px;
+      max-height:100px;
       width: auto;
       height: auto;
       margin-left: -15px;
-      margin-top: 20px;
+      margin-top: 50px !important;
     }
   }
   .nav-toggle {
