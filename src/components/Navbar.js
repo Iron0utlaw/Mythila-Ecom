@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logom.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -49,8 +49,12 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      max-width:230px;
+      max-height:80px;
+      width: auto;
+      height: auto;
       margin-left: -15px;
+      margin-top: 20px;
     }
   }
   .nav-toggle {
