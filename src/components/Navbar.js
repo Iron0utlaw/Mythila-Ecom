@@ -57,6 +57,7 @@ const NavContainer = styled.nav`
       height: auto;
       margin-left: -15px;
       margin-top: 20px;
+      padding: 5px 0;
     }
   }
   .nav-toggle {

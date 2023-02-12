@@ -17,6 +17,7 @@ const Wrapper = styled.main`
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top:15px;
   h1 {
     font-size: 10rem;
   }
