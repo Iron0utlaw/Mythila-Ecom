@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useCartContext } from '../context/cart_context'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { CartContent, PageHero } from '../components'
 
 const CartPage = () => {
-  return <h4>cart page</h4>
+  return <motion.div>
+    <h4>Cart Page</h4>
+  </motion.div>
 }
 
 const Wrapper = styled.main`
