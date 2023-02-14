@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
-import { products_url as url } from '../utils/constants'
+import { products_url as url, single_product_url } from '../utils/constants'
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
@@ -14,7 +14,11 @@ import {
 } from '../actions'
 
 const initialState = {
-  isSidebarOpen:false
+  isSidebarOpen:false,
+  product_loading: false,
+  product_error: false,
+  product: [],
+  featured_product: [],
 }
 
 const ProductsContext = React.createContext()
@@ -28,6 +32,14 @@ export const ProductsProvider = ({ children }) => {
     dispatch({type: SIDEBAR_CLOSE})
   }
 
+  const fetchProducts = async(url) =>{
+    const response = await axios.get(url)
+    console.log(response)
+  }
+
+  useEffect(() =>{
+    fetchProducts(url)
+  },[])
 
   return (
     <ProductsContext.Provider value={{...state,openSidebar,closeSidebar}}>
@@ -35,6 +47,7 @@ export const ProductsProvider = ({ children }) => {
     </ProductsContext.Provider>
   )
 }
+
 // make sure use
 export const useProductsContext = () => {
   return useContext(ProductsContext)
