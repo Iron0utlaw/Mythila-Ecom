@@ -9,20 +9,21 @@ import {cat} from '../utils/cat'
 
 const FeaturedProducts = () => {
   const {product_loading:loading,products_error:error,featured_products:featured} = useProductsContext();
+  console.log(featured)
   if(loading){
     return <Loading/>
   }
   if(error){
     return <Error/>
   }
-  return <Wrapper className='section'>
+  return<Wrapper className='section'>
     <div className='title'>
       <h2>Featured Products</h2>
       <div className='underline'></div>
     </div>
     <div className='section-center featured'>
-      {cat.map((products) => {
-        return <Product key={products.id} {...products}/>
+      {featured.slice(0,3).map((product) =>{
+        return <Product key={product.id} {...product}/>
       })}
     </div>
   </Wrapper>
