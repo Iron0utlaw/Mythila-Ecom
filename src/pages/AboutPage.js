@@ -10,7 +10,7 @@ const AboutPage = () => {
   animate={{ width: "100vw", x: 0 }}
   transition={{ duration: 1, origin: 1 }}
   >
-    <PageHero  className="ok" title="about"></PageHero>
+    <PageHero  className="ok" title=" about"></PageHero>
     <Wrapper className='page section section-center'>
       <img src={aboutImg} alt="nice desk"></img>
       <article className='title'>
