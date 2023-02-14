@@ -15,7 +15,7 @@ const Nav = () => {
     <div className='nav-center'>
       <div className='nav-header'>
         <Link to="/">
-          <img src={logo} alt="comfy sloth"/>
+          <img src={logo} alt="mythila"/>
         </Link>
         <button type='button' className='nav-toggle' onClick={openSidebar}><FaBars/></button>
       </div>
@@ -55,7 +55,7 @@ const NavContainer = styled.nav`
       max-height:80px;
       width: auto;
       height: auto;
-      margin-left: -15px;
+      margin-left: -5px;
       margin-top: 20px;
       padding: 5px 0;
     }
