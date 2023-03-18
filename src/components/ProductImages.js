@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-
+import {cat} from '../utils/cat';
 const ProductImages = () => {
-  return <h4>product images</h4>
+  return <Wrapper>
+    
+  </Wrapper>
 }
 
 const Wrapper = styled.section`

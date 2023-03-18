@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
+import aboutImg from '../assets/Artboard.png'
 import { motion } from 'framer-motion'
 
 const AboutPage = () => {
@@ -30,7 +30,7 @@ const Wrapper = styled.section`
     display: block;
     border-radius: var(--radius);
     height: 500px;
-    object-fit: center;
+    object-fit: cover;
     
 
   }
