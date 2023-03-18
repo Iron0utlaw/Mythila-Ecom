@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 const AboutPage = () => {
   return <motion.main
   initial={{ width: "0vw", x: "100vw" }}
-  animate={{ width: "100vw", x: 0 }}
-  transition={{ duration: 1, origin: 1 }}
+      animate={{ width: "100vw", x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
   >
     <PageHero  className="ok" title=" about"></PageHero>
     <Wrapper className='page section section-center'>
