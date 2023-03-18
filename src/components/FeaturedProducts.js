@@ -5,11 +5,11 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
-import {cat} from '../utils/cat'
+import cat from '../utils/cat'
 
 const FeaturedProducts = () => {
-  const {product_loading:loading,products_error:error,featured_products:cat} = useProductsContext();
-  console.log(cat)
+  const {product_loading:loading,products_error:error,featured_products:featured} = useProductsContext();
+  console.log(featured)
   if(loading){
     return <Loading/>
   }
@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
       <div className='underline'></div>
     </div>
     <div className='section-center featured'>
-      {cat.slice(0,3).map((product) =>{
+      {featured.map((product) =>{
         return <Product key={product.id} {...product}/>
       })}
     </div>

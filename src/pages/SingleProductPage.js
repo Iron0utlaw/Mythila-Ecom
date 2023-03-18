@@ -15,37 +15,10 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const SingleProductPage = () => {
-  const {id}=useParams();
-  const history=useHistory();
-  const {
-    single_product_loading:loading,
-    single_product_error:error,
-    single_product:product,
-    fetchSingleProduct,
-
-  }=useProductsContext();
-  useEffect(()=>{
-    fetchSingleProduct(`${url}${id}`);
-  },[id])
-  useEffect(()=>{
-    if(error){
-      setTimeout(()=>{
-        history.push('/');
-
-      },3000)
-    }
-  },[error])
-  if(loading){
-    return <Loading></Loading>
-  }
-  if(error){
-    return <Error></Error>
-  }
-
-  const {name,price,description,stock,stars,reviews,idd,company,images}=product
-  return <Wrapper>
+ 
    
-  </Wrapper>
+ 
+  return <h4>single product page</h4>
 }
 
 const Wrapper = styled.main`
