@@ -1,9 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Filters, ProductList, Sort, PageHero } from '../components'
+import { motion } from 'framer-motion'
 
 const ProductsPage = () => {
-  return <main>
+  return <motion.main
+  initial={{ width: "0vw", x: "100vw" }}
+      animate={{ width: "100vw", x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+  >
+  <main>
     <PageHero title="Products"></PageHero>
     <Wrapper className='page'>
       <div className='section-center products'>
@@ -15,6 +21,7 @@ const ProductsPage = () => {
       </div>
     </Wrapper>
   </main>
+  </motion.main>
 }
 
 const Wrapper = styled.div`
