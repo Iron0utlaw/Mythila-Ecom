@@ -6,7 +6,7 @@
 // export default cat; 
 const product_data = [
     {
-      "id": "recZkNf2kwmdBcqd0",
+      "id": "1",
       "name": "Kari",
       "price": 25,
       "image": "https://i.ibb.co/BBf0nCM/4.jpg",
@@ -21,7 +21,7 @@ const product_data = [
       "shipping": true
     },
     {
-        "id": "recZkNf2kwmdBcqd0",
+        "id": "2",
         "name": "Wall Art",
         "price": 25,
         "image": "https://i.ibb.co/fFf62HW/Artboard-3.png",
@@ -37,7 +37,7 @@ const product_data = [
         "featured":true,
       },
     {
-      "id": "recEHmzvupvT8ZONH",
+      "id": "3",
       "name": "Handmade Journal",
       "price": 109999,
       "image": "https://i.ibb.co/9bHjw9C/Notebook1.jpg",
@@ -50,7 +50,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "rec5NBwZ5zCD9nfF0",
+      "id": "4",
       "name": "Hand-Painted A5 Notebook",
       "price": 309999,
       "image": "https://i.ibb.co/LYPmr8f/Notebook1.jpg",
@@ -63,7 +63,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "recd1jIVIEChmiwhe",
+      "id": "5",
       "name": "Mythila Matsya (The Fish) Handmade Madhubani Art",
       "price": 12,
       "image": "https://i.ibb.co/3SnFHq8/Matsya.jpg",
@@ -78,7 +78,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recotY5Nh00DQFdkm",
+      "id": "6",
       "name": "Mythila Hand Painted Madhubani Art",
       "price": 42999,
       "image": "https://i.ibb.co/MVnhW89/Notebook5.jpg",
@@ -93,7 +93,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "rec1Ntk7siEEW9ha1",
+      "id": "7",
       "name": "emperor bed",
       "price": 23999,
       "image": "https://images2.imgbox.com/ba/e2/q0XmH4ZV_o.jpeg",
@@ -107,7 +107,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recNZ0koOqEmilmoz",
+      "id": "8",
       "name": "Mythila Hand Painted Journal of Krishna",
       "price": 59,
       "image": "https://i.ibb.co/T1H8G3Q/Notebook4.jpg",
@@ -122,7 +122,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recrfxv3EwpvJwvjq",
+      "id": "9",
       "name": "Hand-Painted A5 Notebook",
       "price": 39999,
       "image": "https://i.ibb.co/ZgvQK8n/Artboard-3-copy.png",
@@ -137,7 +137,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recoW8ecgjtKx2Sj2",
+      "id": "10",
       "name": "Mythila Handmade Journal",
       "price": 20099,
       "image": "https://i.ibb.co/qd8KtCw/Notebook8.jpg",
@@ -151,7 +151,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "recEOA6qtDag1hRbU",
+      "id": "11",
       "name": "leather sofa",
       "price": 99999,
       "image": "https://images2.imgbox.com/9e/54/5V5iZwX4_o.jpeg",
@@ -164,7 +164,7 @@ const product_data = [
       "category": "office"
     },
     {
-      "id": "recoAJYUCuEKxcPSr",
+      "id": "12",
       "name": "Mythila Handmade Journal",
       "price": 31999,
       "image": "https://i.ibb.co/X8SpMb6/Notebook9.jpg",
@@ -179,7 +179,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "recQ0fMd8T0Vk211E",
+      "id": "13",
       "name": "Mythila Lotus Mandala Handmade Madhubani Art",
       "price": 3099,
       "image": "https://i.ibb.co/F4sqWr5/Notebook10.jpg",
@@ -192,7 +192,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "rec7CjDWKRgNQtrKe",
+      "id": "14",
       "name": "Mythila Hand Painted Madhubani Art",
       "price": 30999,
       "image": "https://i.ibb.co/jgxL3sx/Notebook22.webp",
@@ -204,7 +204,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "recF0KpwlkF7e8kXO",
+      "id": "15",
       "name": "Hand Painted Madhubani Art",
       "price": 109999,
       "image": "https://i.ibb.co/XZg91FH/Notebook20.webp",
@@ -217,7 +217,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recs5BSVU3qQrOj4E",
+      "id": "16",
       "name": "Hand Painted Madhubani Art",
       "price": 129999,
       "image": "https://i.ibb.co/nLj05FD/Notebook18.webp",
@@ -231,7 +231,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "recroK1VD8qVdMP5H",
+      "id": "17",
       "name": "suede armchair",
       "price": 15999,
       "image": "https://images2.imgbox.com/a2/e2/eiCS6eiw_o.jpeg",
@@ -243,7 +243,7 @@ const product_data = [
       "category": "office"
     },
     {
-      "id": "rec7JInsuCEHgmaGe",
+      "id": "18",
       "name": "Hand Painted Madhubani Art",
       "price": 79999,
       "image": "https://i.ibb.co/bgVFR7B/Notebook15.webp",
@@ -257,7 +257,7 @@ const product_data = [
       "category": "living room"
     },
     {
-      "id": "rec3jeKnhInKHJuz2",
+      "id": "19",
       "name": "Hand Painted Madhubani Art",
       "price": 120999,
       "image": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
@@ -270,7 +270,7 @@ const product_data = [
       "category": "office"
     },
     {
-      "id": "recv2ohxljlK2FZO7",
+      "id": "20",
       "name": "Paper Mache Handcrafted",
       "price": 250099,
       "image": "https://i.ibb.co/M9RgHpg/Artboard-3-copy-2.png",
