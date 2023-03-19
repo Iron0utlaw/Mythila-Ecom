@@ -16,7 +16,7 @@ const AboutPage = () => {
       <article className='title'>
         <h2>our story</h2>
         <div className='underline'></div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Bringing you closer to the culture of Madhubani, Mythila Art is brought to you by 1000+ skilled artisans. Our goal is to diversify the art form into a variety of thought-provoking issues without losing its true essence. By giving an opportunity to artisans who have lesser reach, we are driven to produce genuine masterpieces and committed to supporting all artists who contribute to bringing this art form around the world. Mythila themes differ depending on the function or the event that they are painted for. However, the central theme remains love and fertility. All deities of the hindu pantheon and the rural local traditions can be found in the art. The art of Mithila is unique, for here we can see a unique blend of comprehension, knowledge of Sanskrit and culture, vocabulary and iconography.</p>
       </article>
     </Wrapper>
   </motion.main>
