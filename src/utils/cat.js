@@ -17,7 +17,7 @@ const product_data = [
       ],
       "company": "marcos",
       "description": "This trendy showpiece is intricately designed using monochromatic line art and uses its detailed features to represent the symbol of luck and prosperity - the elephant. The painting therefore makes elegant use of Mithila Art to depict elephant in nature.",
-      "category": "picture",
+      "category": "notebook",
       "shipping": true
     },
     {
@@ -32,7 +32,7 @@ const product_data = [
         ],
         "company": "marcos",
         "description": "These wall art pieces are designed to showcase the elegant flora and fauna present around us. With the use of sophisticated features of Madhubani Art, the vibrance of nature is portrayed.",
-        "category": "picture",
+        "category": "notebook",
         "shipping": true,
         "featured":true,
       },
@@ -103,7 +103,7 @@ const product_data = [
       ],
       "company": "ikea",
       "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "bedroom",
+      "category": "notebook",
       "shipping": true
     },
     {
@@ -133,7 +133,7 @@ const product_data = [
       ],
       "company": "ikea",
       "description": "These hand-painted A5 notebooks  can be used as journals, notebooks, sketchbooks, or albums to stick travel photos onto to make a collage and reliving your most special memories! You can carry them in style and get compliments everywhere you go!",
-      "category": "office",
+      "category": "notebook",
       "shipping": true
     },
     {
@@ -148,7 +148,7 @@ const product_data = [
       ],
       "company": "caressa",
       "description": "Ducks, with playful and cheerful disposition symbolize a care-free nature and depict the small delights in life. You too can express your thoughts and feelings in this Mithila handcrafted journal and carry this compact-sized notebook around to your favorite places. ",
-      "category": "notebook"
+      "category": "notebook" 
     },
     {
       "id": "11",
@@ -161,7 +161,7 @@ const product_data = [
       ],
       "company": "caressa",
       "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "office"
+      "category": "notebook"
     },
     {
       "id": "12",
@@ -213,7 +213,7 @@ const product_data = [
       ],
       "company": "liddy",
       "description": "This elegant art piece notebook merges the symbol of the moon - representing the cyclical nature of life along with the unique handmade art of Madhubani artist. You can easily use it for free writings, doodles, paintings and poetry writings!",
-      "category": "notebook",
+      "category":"notebook",
       "shipping": true
     },
     {
@@ -240,7 +240,7 @@ const product_data = [
       ],
       "company": "caressa",
       "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "office"
+      "category": "notebook"
     },
     {
       "id": "18",
@@ -254,7 +254,7 @@ const product_data = [
       ],
       "company": "liddy",
       "description": " Just as the Sun illuminated our world, you can also illuminate your world by using this pretty Surya composition notebook and using your calligraphy, artistic, sketching, or poetry skills to build a personal world inside this crafty notebook.",
-      "category": "living room"
+      "category": "notebook"
     },
     {
       "id": "19",
@@ -267,7 +267,7 @@ const product_data = [
       ],
       "company": "marcos",
       "description": " This impeccable artpiece journal can be carried in style and compliments everywhere you go! Its handy size makes it travel-friendly while the blank pages allow space for freedom of expression. Feel free to frame the artwork once you’re done with the notebook to adorn your walls!",
-      "category": "office"
+      "category": "notebook"
     },
     {
       "id": "20",
