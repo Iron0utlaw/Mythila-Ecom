@@ -40,6 +40,34 @@ const Filters = () => {
         </div>
       </div>
       {/* end cateogoreid */}
+      {/* colours */}
+      <div className = 'form-control'>
+        <h5>
+          Colors
+        </h5>
+        <div className = "colors">
+          {
+            colors.map((c, index)=>{
+              if(c === 'all'){
+                return <button 
+                key ={index} 
+                name="color" 
+                onClick={updateFilters} data-color='all' className={`${
+                  color === 'all' ? 'all-btn active' :
+                  'all-btn'
+                }`}>
+                  all
+                </button>
+              }
+              return <button key={index} name='color' style ={
+                {background:c}} className={`${color === c? 'color-btn active': 'color-btn'}`} data-color={c} onClick = {updateFilters}>
+                  {color === c ? <FaCheck /> : null}
+                </button>
+            })
+          }
+        </div>
+      </div>
+      {/* colours_end */}
     </form>
   </div>
   </Wrapper>
@@ -85,7 +113,7 @@ const Wrapper = styled.section`
     padding: 0.25rem;
   }
   .colors {
-    display: flex;
+    display: flex; 
     align-items: center;
   }
   .color-btn {
