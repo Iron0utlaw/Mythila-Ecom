@@ -92,20 +92,7 @@ const product_data = [
       "category": "notebook",
       "shipping": true
     },
-    {
-      "id": "7",
-      "name": "emperor bed",
-      "price": 23999,
-      "image": "https://images2.imgbox.com/ba/e2/q0XmH4ZV_o.jpeg",
-      "colors": [
-        "#0000ff",
-        "#000"
-      ],
-      "company": "ikea",
-      "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "notebook",
-      "shipping": true
-    },
+   
     {
       "id": "8",
       "name": "Hand-Painted Krishna Journal",
@@ -137,7 +124,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "10",
+      "id": "10" ,
       "name": "Handmade Duck Journal",
       "price": 20099,
       "image": "https://i.ibb.co/qd8KtCw/Notebook8.jpg",
@@ -150,36 +137,9 @@ const product_data = [
       "description": "Ducks, with playful and cheerful disposition symbolize a care-free nature and depict the small delights in life. You too can express your thoughts and feelings in this Mithila handcrafted journal and carry this compact-sized notebook around to your favorite places. ",
       "category": "notebook" 
     },
+    
     {
-      "id": "11",
-      "name": "leather sofa",
-      "price": 99999,
-      "image": "https://images2.imgbox.com/9e/54/5V5iZwX4_o.jpeg",
-      "colors": [
-        "#00ff00",
-        "#0000ff"
-      ],
-      "company": "caressa",
-      "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "notebook"
-    },
-    {
-      "id": "12",
-      "name": "Handmade Leaf Journal",
-      "price": 31999,
-      "image": "https://i.ibb.co/X8SpMb6/Notebook9.jpg",
-      
-      "colors": [
-        "#ffb900",
-        "#ff0000",
-        "#00ff00"
-      ],
-      "company": "caressa",
-      "description": "Madhubani Art depicts leaves in a simplistic way, symbolizing fertility and growth. The monochromatic leaves of spring and summer depict hope, renewal and revival. Make sure to grab this latest composition journal and flaunt your new art piece notebook in front of your friends and colleagues.",
-      "category": "notebook"
-    },
-    {
-      "id": "13",
+      "id": "12" ,
       "name": "Handmade Lotus Mandala",
       "price": 3099,
       "image": "https://i.ibb.co/F4sqWr5/Notebook10.jpg",
@@ -192,7 +152,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "14",
+      "id": "13" ,
       "name": "Hand-Painted Bird Art",
       "price": 30999,
       "image": "https://i.ibb.co/jgxL3sx/Notebook22.webp",
@@ -204,7 +164,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "15",
+      "id": "14" ,
       "name": "Hand-Painted Soma Art",
       "price": 109999,
       "image": "https://i.ibb.co/XZg91FH/Notebook20.webp",
@@ -217,7 +177,7 @@ const product_data = [
       "shipping": true
     },
     {
-      "id": "16",
+      "id": "15" ,
       "name": "Hand-Painted Radha-Krishna",
       "price": 129999,
       "image": "https://i.ibb.co/nLj05FD/Notebook18.webp",
@@ -230,20 +190,9 @@ const product_data = [
       "category": "notebook",
       "shipping": true
     },
+    
     {
-      "id": "17",
-      "name": "suede armchair",
-      "price": 15999,
-      "image": "https://images2.imgbox.com/a2/e2/eiCS6eiw_o.jpeg",
-      "colors": [
-        "#ffb900"
-      ],
-      "company": "caressa",
-      "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-      "category": "notebook"
-    },
-    {
-      "id": "18",
+      "id": "17" ,
       "name": "Hand-Painted Surya Art",
       "price": 79999,
       "image": "https://i.ibb.co/bgVFR7B/Notebook15.webp",
@@ -257,7 +206,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "19",
+      "id": "18" ,
       "name": "Hand-Painted Vivah Journal",
       "price": 120999,
       "image": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
@@ -270,7 +219,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "20",
+      "id": "19" ,
       "name": "Paper Mache Handcrafted",
       "price": 250099,
       "image": "https://i.ibb.co/M9RgHpg/Artboard-3-copy-2.png",

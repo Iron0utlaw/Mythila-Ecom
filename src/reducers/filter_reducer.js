@@ -89,7 +89,7 @@ return {...state,grid_view:true}
           })
         }
         //category
-        if (category != 'all'){
+        if (category !== 'all'){
           tempProducts = tempProducts.filter(
             (product) => product.category === category
           )
