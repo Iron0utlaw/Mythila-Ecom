@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
-import cat from '../utils/cat'
+
 
 const FeaturedProducts = () => {
   const {product_loading:loading,products_error:error,featured_products:featured} = useProductsContext();
@@ -26,6 +26,7 @@ const FeaturedProducts = () => {
         return <Product key={product.id} {...product}/>
       })}
     </div>
+    <Link to='/products' className='btn'>All Products</Link>
   </Wrapper>
 }
 
