@@ -8,14 +8,14 @@ const product_data = [
     {
       "id": "1",
       "name": "Kari Line Art",
-      "price": 25,
+      "price": 300,
       "image": "https://i.ibb.co/BBf0nCM/4.jpg",
       "colors": [
         "#ff0000",
         "#00ff00",
         "#0000ff"
       ],
-      "company": "marcos",
+      "company": "mythila",
       "description": "This trendy showpiece is intricately designed using monochromatic line art and uses its detailed features to represent the symbol of luck and prosperity - the elephant. The painting therefore makes elegant use of Mithila Art to depict elephant in nature.",
       "category": "notebook",
       "shipping": true
@@ -23,23 +23,23 @@ const product_data = [
     {
         "id": "2",
         "name": "Wall Art",
-        "price": 25,
+        "price": 300,
         "image": "https://i.ibb.co/fFf62HW/Artboard-3.png",
         "colors": [
           "#ff0000",
           "#00ff00",
           "#0000ff"
         ],
-        "company": "marcos",
+        "company": "mythila",
         "description": "These wall art pieces are designed to showcase the elegant flora and fauna present around us. With the use of sophisticated features of Madhubani Art, the vibrance of nature is portrayed.",
-        "category": "notebook",
+        "category": "paintings",
         "shipping": true,
         "featured":true,
       },
     {
       "id": "3",
       "name": "Handmade Fish Journal",
-      "price": 109999,
+      "price": 300,
       "image": "https://i.ibb.co/9bHjw9C/Notebook1.jpg",
       "colors": [
         "#000",
@@ -52,7 +52,7 @@ const product_data = [
     {
       "id": "4",
       "name": "Hand-Painted Radha Journal",
-      "price": 399,
+      "price": 300,
       "image": "https://i.ibb.co/LYPmr8f/Notebook1.jpg",
       "colors": [
         "#ffb900",
@@ -65,14 +65,14 @@ const product_data = [
     {
       "id": "5",
       "name": "Handmade Matsya(The Fish)",
-      "price": 12,
+      "price": 300,
       "image": "https://i.ibb.co/3SnFHq8/Matsya.jpg",
       "colors": [
         "#000",
         "#00ff00",
         "#0000ff"
       ],
-      "company": "marcos",
+      "company": "mythila",
       "description": "This colorful Madhubani Journal is inspired by a digital drawing of Matsya or the Fish which represents fertility, luck and prosperity. Madhubani, being one of the most famous traditional art forms, represents real-life aspects beautifully with a touch of our Indian heritage.",
       "category": "notebook",
       "shipping": true
@@ -80,7 +80,7 @@ const product_data = [
     {
       "id": "6",
       "name": "Hand-Painted Guitar",
-      "price": 42999,
+      "price": 300,
       "image": "https://i.ibb.co/MVnhW89/Notebook5.jpg",
       "colors": [
         "#00ff00",
@@ -92,11 +92,11 @@ const product_data = [
       "category": "notebook",
       "shipping": true
     },
-   
+  
     {
       "id": "8",
       "name": "Hand-Painted Krishna Journal",
-      "price": 59,
+      "price": 300,
       "image": "https://i.ibb.co/T1H8G3Q/Notebook4.jpg",
     
       "colors": [
@@ -111,7 +111,7 @@ const product_data = [
     {
       "id": "9",
       "name": "Hand-Painted A5 Notebooks",
-      "price": 39999,
+      "price": 300,
       "image": "https://i.ibb.co/ZgvQK8n/Artboard-3-copy.png",
       "featured": true,
       "colors": [
@@ -126,7 +126,7 @@ const product_data = [
     {
       "id": "10" ,
       "name": "Handmade Duck Journal",
-      "price": 20099,
+      "price": 300,
       "image": "https://i.ibb.co/qd8KtCw/Notebook8.jpg",
       "colors": [
         "#ff0000",
@@ -141,7 +141,7 @@ const product_data = [
     {
       "id": "12" ,
       "name": "Handmade Lotus Mandala",
-      "price": 3099,
+      "price": 300,
       "image": "https://i.ibb.co/F4sqWr5/Notebook10.jpg",
       "colors": [
         "#000"
@@ -154,7 +154,7 @@ const product_data = [
     {
       "id": "13" ,
       "name": "Hand-Painted Bird Art",
-      "price": 30999,
+      "price": 300,
       "image": "https://i.ibb.co/jgxL3sx/Notebook22.webp",
       "colors": [
         "#00ff00"
@@ -166,7 +166,7 @@ const product_data = [
     {
       "id": "14" ,
       "name": "Hand-Painted Soma Art",
-      "price": 109999,
+      "price": 300,
       "image": "https://i.ibb.co/XZg91FH/Notebook20.webp",
       "colors": [
         "#0000ff"
@@ -179,13 +179,13 @@ const product_data = [
     {
       "id": "15" ,
       "name": "Hand-Painted Radha-Krishna",
-      "price": 129999,
+      "price": 300,
       "image": "https://i.ibb.co/nLj05FD/Notebook18.webp",
       "colors": [
         "#00ff00",
         "#ffb900"
       ],
-      "company": "marcos",
+      "company": "mythila",
       "description": " Radha-Krishna symbolize divine love and sacrifice, they represent the union of two vibrant deities. You can gift this intricate journal to your loved ones and let the creative juices flow wild and free as they make use of it to paint, sketch and doodle!",
       "category": "notebook",
       "shipping": true
@@ -194,7 +194,7 @@ const product_data = [
     {
       "id": "17" ,
       "name": "Hand-Painted Surya Art",
-      "price": 79999,
+      "price": 300,
       "image": "https://i.ibb.co/bgVFR7B/Notebook15.webp",
       
       "colors": [
@@ -208,20 +208,20 @@ const product_data = [
     {
       "id": "18" ,
       "name": "Hand-Painted Vivah Journal",
-      "price": 120999,
+      "price": 300,
       "image": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
       
       "colors": [
         "#ff0000"
       ],
-      "company": "marcos",
+      "company": "mythila",
       "description": " This impeccable artpiece journal can be carried in style and compliments everywhere you go! Its handy size makes it travel-friendly while the blank pages allow space for freedom of expression. Feel free to frame the artwork once you’re done with the notebook to adorn your walls!",
       "category": "notebook"
     },
     {
       "id": "19" ,
       "name": "Paper Mache Handcrafted",
-      "price": 250099,
+      "price": 300,
       "image": "https://i.ibb.co/M9RgHpg/Artboard-3-copy-2.png",
       "featured":true,
       "colors": [
