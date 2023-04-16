@@ -52,7 +52,7 @@ localStorage.setItem('cart',JSON.stringify(state.cart));
   },[state.cart]);
 
   return (
-    <CartContext.Provider value={{...state,addToCart,removeItem,toggleAmount,clearCart}}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{...state,addToCart,removeItem,toggleAmount,clearCart,}}>{children}</CartContext.Provider>
   )
 }
 // make sure use

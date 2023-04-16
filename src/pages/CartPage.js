@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useCartContext } from '../context/cart_context'
 import { motion } from 'framer-motion'
@@ -7,6 +7,9 @@ import { CartContent, PageHero } from '../components'
 
 const CartPage = () => {
   const {cart}=useCartContext();
+  useEffect(()=>{
+    console.log(cart);
+  },[cart]);
   if(cart.length<1){
     return (
       <Wrapper className='page-100'>
