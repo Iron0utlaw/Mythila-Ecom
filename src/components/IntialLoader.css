@@ -1,0 +1,18 @@
+
+.loader-img {
+    -webkit-animation: rotating 2s linear infinite;
+    animation: rotating 3s linear infinite ;
+
+}
+.loader-img  img{
+    width: 23%;
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
