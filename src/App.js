@@ -6,15 +6,18 @@ import { useEffect,useState } from 'react'
 
 import AnimatedRoutes from './components/AnimatedRoutes'
 import InitialLoader from './components/IntialLoader'
+import { useUserContext } from './context/user_context'
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [flag,setFlag]=useState(false);
+  const {myUser}=useUserContext();
 
   useEffect(() => {
       setLoading(true);
       setTimeout(() => {
           setLoading(false);
-      }, 3000);
+      }, 1000);
   }, []);
   return (
  <>
