@@ -7,6 +7,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import AnimatedRoutes from './components/AnimatedRoutes'
 import InitialLoader from './components/IntialLoader'
 import { useUserContext } from './context/user_context'
+import logom from './assets/logom.png'
 import Avatar from './assets/Avatar.jpeg';
 
 
@@ -35,7 +36,7 @@ function App() {
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
-       <FloatingWhatsApp phoneNumber='9811825574' accountName='Sachin Jha' avatar={Avatar}/>
+       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila' avatar={logom}/>
 
        <Footer/>
      </Router>
