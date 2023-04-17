@@ -157,6 +157,7 @@ p {
 }
 
 .loading {
+  
   width: 6rem;
   height: 6rem;
   margin: 0 auto;
@@ -166,6 +167,7 @@ p {
   border-top-color: var(--clr-primary-5);
   animation: spinner 0.6s linear infinite;
 }
+
 
 .btn {
   text-transform: uppercase;

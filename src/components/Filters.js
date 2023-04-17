@@ -41,7 +41,7 @@ const Filters = () => {
       </div>
       {/* end cateogoreid */}
       {/* colours */}
-      <div className = 'form-control'>
+      {/* <div className = 'form-control'>
         <h5>
           Colors
         </h5>
@@ -66,7 +66,7 @@ const Filters = () => {
             })
           }
         </div>
-      </div>
+      </div> */}
       {/* colours_end */}
       {/* price */}
       <div className='form-control'>
