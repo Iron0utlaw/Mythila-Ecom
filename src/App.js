@@ -9,23 +9,18 @@ import InitialLoader from './components/IntialLoader'
 import { useUserContext } from './context/user_context'
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  
   const [flag,setFlag]=useState(false);
   const {myUser}=useUserContext();
 
-  useEffect(() => {
-      setLoading(true);
-      setTimeout(() => {
-          setLoading(false);
-      }, 2837);
-  }, []);
+  
   return (
- <>
+ 
  
 
 
-  {loading?(<InitialLoader/>):
-  ( <div>
+  
+   <div>
     <Router>
 
       <Navbar/>
@@ -33,10 +28,9 @@ function App() {
       <AnimatedRoutes/>
       <Footer/>
     </Router>
-  </div>)}
-  
+  </div>
  
-  </>
+  
   )
 }
 
