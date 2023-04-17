@@ -3,10 +3,11 @@ import { BrowserRouter as Router} from 'react-router-dom'
 import { Navbar, Sidebar, Footer, Loading } from './components'
 import styled from 'styled-components'
 import { useEffect,useState } from 'react'
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import AnimatedRoutes from './components/AnimatedRoutes'
 import InitialLoader from './components/IntialLoader'
 import { useUserContext } from './context/user_context'
+import Avatar from './assets/Avatar.jpeg';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
+       <FloatingWhatsApp phoneNumber='9811825574' accountName='Sachin Jha' avatar={Avatar}/>
+
        <Footer/>
      </Router>
    
