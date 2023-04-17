@@ -332,7 +332,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Radha Journal",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -509,7 +509,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Guitar",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -619,7 +619,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Krishna Journal",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -723,7 +723,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted A5 Notebooks",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -827,7 +827,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name":"Handmade Duck Journal",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -931,7 +931,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Handmade Lotus Mandala",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1036,7 +1036,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Bird Art",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1141,7 +1141,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Soma Art",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1245,7 +1245,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Radha-Krishna",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1351,7 +1351,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Surya Art",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1458,7 +1458,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Hand-Painted Vivah Journal",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   
@@ -1467,113 +1467,113 @@ const data=[
 
 
 
-  {
-    "id": "18",
-    "stock": 3,
-    "price": 300,
-    "shipping": true,
-    "colors": [
-      "#ff0000",
-      "#00ff00",
-      "#0000ff"
-    ],
-    "category": "office",
-    "images": [
-      {
-        "id": "attub6EG88kJKuYs8",
-        "width": 1000,
-        "height": 667,
+  // {
+  //   "id": "19",
+  //   "stock": 3,
+  //   "price": 300,
+  //   "shipping": true,
+  //   "colors": [
+  //     "#ff0000",
+  //     "#00ff00",
+  //     "#0000ff"
+  //   ],
+  //   "category": "office",
+  //   "images": [
+  //     {
+  //       "id": "attub6EG88kJKuYs8",
+  //       "width": 1000,
+  //       "height": 667,
 
-        "url": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
-        "filename": "product-4.jpeg",
-        "size": 49641,
-        "type": "image/jpeg",
-        "thumbnails": {
-          "small": {
-            "url":"https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 54,
-            "height": 36
-          },
-          "large": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 768,
-            "height": 512
-          },
-          "full": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 3000,
-            "height": 3000
-          }
-        }
+  //       "url": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
+  //       "filename": "product-4.jpeg",
+  //       "size": 49641,
+  //       "type": "image/jpeg",
+  //       "thumbnails": {
+  //         "small": {
+  //           "url":"https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 54,
+  //           "height": 36
+  //         },
+  //         "large": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 768,
+  //           "height": 512
+  //         },
+  //         "full": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 3000,
+  //           "height": 3000
+  //         }
+  //       }
   
-      },
+  //     },
     
      
-      {
-        "id": "attub6EG88kJKuYs8",
-        "width": 1000,
-        "height": 667,
-        "url": "https://i.ibb.co/dQHqhT7/Notebook14.webp",
-        "filename": "product-4.jpeg",
-        "size": 49641,
-        "type": "image/jpeg",
-        "thumbnails": {
-          "small": {
-            "url":"https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 54,
-            "height": 36
-          },
-          "large": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 768,
-            "height": 512
-          },
-          "full": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 3000,
-            "height": 3000
-          }
-        }
-      },
-      {
-        "id": "attub6EG88kJKuYs8",
-        "width": 1000,
-        "height": 667,
-        "url": "https://i.ibb.co/jz3X8s5/Notebook3.jpg",
-        "filename": "product-4.jpeg",
-        "size": 49641,
-        "type": "image/jpeg",
-        "thumbnails": {
-          "small": {
-            "url":"https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 54,
-            "height": 36
-          },
-          "large": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 768,
-            "height": 512
-          },
-          "full": {
-            "url": "https://i.ibb.co/BBf0nCM/4.jpg",
-            "width": 3000,
-            "height": 3000
-          }
-        }
-      },
+  //     {
+  //       "id": "attub6EG88kJKuYs8",
+  //       "width": 1000,
+  //       "height": 667,
+  //       "url": "https://i.ibb.co/dQHqhT7/Notebook14.webp",
+  //       "filename": "product-4.jpeg",
+  //       "size": 49641,
+  //       "type": "image/jpeg",
+  //       "thumbnails": {
+  //         "small": {
+  //           "url":"https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 54,
+  //           "height": 36
+  //         },
+  //         "large": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 768,
+  //           "height": 512
+  //         },
+  //         "full": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 3000,
+  //           "height": 3000
+  //         }
+  //       }
+  //     },
+  //     {
+  //       "id": "attub6EG88kJKuYs8",
+  //       "width": 1000,
+  //       "height": 667,
+  //       "url": "https://i.ibb.co/jz3X8s5/Notebook3.jpg",
+  //       "filename": "product-4.jpeg",
+  //       "size": 49641,
+  //       "type": "image/jpeg",
+  //       "thumbnails": {
+  //         "small": {
+  //           "url":"https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 54,
+  //           "height": 36
+  //         },
+  //         "large": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 768,
+  //           "height": 512
+  //         },
+  //         "full": {
+  //           "url": "https://i.ibb.co/BBf0nCM/4.jpg",
+  //           "width": 3000,
+  //           "height": 3000
+  //         }
+  //       }
+  //     },
       
-    ],
-    "reviews": 25,
-    "stars": 4.9,
-    "name": "Handmade Fish Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
-    "company": "mythila"
+  //   ],
+  //   "reviews": 25,
+  //   "stars": 4.9,
+  //   "name": "Paper Mache Handcrafted",
+  //   "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+  //   "company": "mythila"
   
-  }
-  ,
+  // }
+  // ,
 
   {
-    "id": "19",
+    "id": "20",
     "stock": 3,
     "price": 300,
     "shipping": true,
@@ -1645,7 +1645,7 @@ const data=[
     ],
     "reviews": 25,
     "stars": 4.9,
-    "name": "Handmade Fish Journal",
+    "name": "Paper Mache Handcrafted",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "company": "mythila"
   

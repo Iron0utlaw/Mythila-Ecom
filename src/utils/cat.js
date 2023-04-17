@@ -219,7 +219,7 @@ const product_data = [
       "category": "notebook"
     },
     {
-      "id": "19" ,
+      "id": "20" ,
       "name": "Paper Mache Handcrafted",
       "price": 300,
       "image": "https://i.ibb.co/M9RgHpg/Artboard-3-copy-2.png",
