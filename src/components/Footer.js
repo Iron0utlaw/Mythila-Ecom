@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialIcon } from 'react-social-icons'
 import styled from 'styled-components'
 const Footer = () => {
   return <Wrapper>
@@ -6,7 +7,14 @@ const Footer = () => {
       &copy; {new Date().getFullYear()}
       <span> Mythila</span>
     </h5>
-    <h5>All rights reserved </h5>
+    <h5>All rights reserved 
+   
+
+    </h5>
+    &nbsp; &nbsp;
+    <SocialIcon url='https://www.instagram.com/mythila2021/' target='__blank' fgColor='white'></SocialIcon>
+      &nbsp; &nbsp;
+      <SocialIcon url='https://www.facebook.com/mythila2021/' fgColor='white'></SocialIcon>
   </Wrapper>
 }
 

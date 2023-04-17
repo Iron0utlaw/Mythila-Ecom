@@ -9,6 +9,7 @@ import InitialLoader from './components/IntialLoader'
 import { useUserContext } from './context/user_context'
 import logom from './assets/logom.png'
 import Avatar from './assets/Avatar.jpeg';
+import { SocialIcon } from 'react-social-icons'
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
-       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila' avatar={logom}/>
+       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila' avatar={logom} statusMessage="We'll reply as soon as we can"/>
 
        <Footer/>
      </Router>
