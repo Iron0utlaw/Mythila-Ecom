@@ -192,6 +192,9 @@ p {
 .title {
   text-align: center;
 }
+.socials{
+  display: flex;
+}
 .link-shop{
   background:none !important;
   width: 7.5rem !important;

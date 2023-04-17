@@ -12,14 +12,17 @@ const Footer = () => {
 
     </h5>
     &nbsp; &nbsp;
+    
+    <div className='socials'>
     <SocialIcon url='https://www.instagram.com/mythila2021/' target='__blank' fgColor='white'></SocialIcon>
       &nbsp; &nbsp;
       <SocialIcon url='https://www.facebook.com/mythila2021/' fgColor='white' target='__blank'></SocialIcon>
+      </div>
   </Wrapper>
 }
 
 const Wrapper = styled.footer`
-  height: 5rem;
+  height: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -9,7 +9,7 @@ import InitialLoader from './components/IntialLoader'
 import { useUserContext } from './context/user_context'
 import logom from './assets/logom.png'
 import Avatar from './assets/Avatar.jpeg';
-import { SocialIcon } from 'react-social-icons'
+
 
 
 function App() {
