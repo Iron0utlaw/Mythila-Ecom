@@ -169,6 +169,7 @@ p {
 }
 
 
+
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
@@ -190,6 +191,10 @@ p {
 }
 .title {
   text-align: center;
+}
+.link-shop{
+  background:none !important;
+  width: 7.5rem !important;
 }
 .title .underline {
   width: 6rem;
