@@ -14,7 +14,7 @@ const Footer = () => {
     &nbsp; &nbsp;
     <SocialIcon url='https://www.instagram.com/mythila2021/' target='__blank' fgColor='white'></SocialIcon>
       &nbsp; &nbsp;
-      <SocialIcon url='https://www.facebook.com/mythila2021/' fgColor='white'></SocialIcon>
+      <SocialIcon url='https://www.facebook.com/mythila2021/' fgColor='white' target='__blank'></SocialIcon>
   </Wrapper>
 }
 
