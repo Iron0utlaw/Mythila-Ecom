@@ -13,7 +13,7 @@ const Nav = () => {
   const {myUser}=useUserContext();
 
   return <NavContainer>
-    <div className='nav-center'>
+    <div className='nav-center' id="home">
       <div className='nav-header'>
         <Link to="/">
           <img src={logo} alt="mythila"/>
