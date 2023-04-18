@@ -6,10 +6,16 @@ import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
 import { useCartContext } from '../context/cart_context'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 const FeaturedProducts = () => {
-  
+  useEffect(()=>{
+    AOS.init({duration:1000});
+},[]);
+
   const {product_loading:loading,products_error:error,featured_products:featured} = useProductsContext();
   console.log(featured)
   if(loading){
@@ -18,12 +24,12 @@ const FeaturedProducts = () => {
   if(error){
     return <Error/>
   }
-  return<Wrapper className='section'>
-    <div className='title'>
+  return<Wrapper className='section' >
+    <div className='title'   >
       <h2>Featured Products</h2>
       <div className='underline'></div>
     </div>
-    <div className='section-center featured'>
+    <div className='section-center featured' data-aos="zoom-in">
       {featured.slice(0,3).map((product) =>{
         return <Product key={product.id} {...product}/>
       })}

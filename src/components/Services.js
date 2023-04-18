@@ -1,8 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { services } from '../utils/constants'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Services = () => {
+  useEffect(()=>{
+    AOS.init({duration:1000});
+},[]);
+
   return <Wrapper>
     <div className='section-center'>
       <article className='header'>
@@ -10,7 +18,7 @@ const Services = () => {
         <p>Art is a mode of expression for human thought. In the Indian context, art emerged when humans painted on mud surfaces through twigs, fingers or bone points. These methods also define the origin of Madhubani.
         <br></br>MYTHILA IS IMMENSELY PROUD TO PRESENT MADHUBANI TO YOU!</p>
       </article>
-      <div className='services-center'>
+      <div className='services-center' data-aos="flip-up">
         {services.map((service)=>{
            return <article key={service.id} className="service">
             <span className='icon'>{service.icon}</span>
