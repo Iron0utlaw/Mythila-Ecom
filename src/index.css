@@ -233,3 +233,29 @@ html{
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
+
+#type-1,
+#type-2 {
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+@media (max-width:440px) {
+  .type h1{
+    font-size: 1.5rem;
+  }
+  .typewrap{
+    flex-direction: column;
+   
+    align-items: center;
+  }
+  .type{
+    margin-top: 1.2rem;
+  }
+  #type1,#type2{
+    text-align: center;
+  }
+  .Typewriter__wrapper{
+    text-align: center;
+  }
+  
+}

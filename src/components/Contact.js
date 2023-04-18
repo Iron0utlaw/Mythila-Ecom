@@ -1,24 +1,66 @@
 import React from 'react'
 import styled from 'styled-components'
+import Typewriter from "typewriter-effect/dist/core";
+import { useEffect,useRef } from 'react';
 
 const Contact = () => {
+  const partRef = useRef(null);
+  const codeRef = useRef(null);
+  useEffect(() => {
+    var typewriter = new Typewriter(partRef.current, {
+        strings: "2000+ ",
+        cursor: "",
+        autoStart: true,
+        loop: true,
+        delay: 250,
+    });
+    typewriter.pauseFor(300).start();
+    var typewriter2 = new Typewriter(codeRef.current, {
+        strings: "50+",
+        cursor: "",
+        autoStart: true,
+        loop: true,
+        delay: 250,
+    });
+    typewriter2.pauseFor(300).start();
+}, []);
+
   return <Wrapper>
     <div className='section-center'>
-      <h3>Join our newsletter and get 10% off</h3>
-      <div className='content'>
+      <div className='typewrap'>
+    <div className='type'>
+      <h1>Products Sold</h1>
+      <span id="type-2" ref={codeRef}></span>
+    </div>
+    <div className='type'>
+      <h1>Total Customers</h1>
+      <span id="type-1" ref={partRef}></span>
+    </div>
+    </div>
+      {/* <div className='content'>
         <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
         </p>
     
-      </div>
+      </div> */}
     </div>
   </Wrapper>
 }
 const Wrapper = styled.section`
+
   padding: 5rem 0;
   h3 {
     text-transform: none;
+    
   }
+  .typewrap{
+    display:flex;
+   
+    margin:0 auto;
+    justify-content:space-around;
+  }
+ 
+ 
   p {
     line-height: 2;
     max-width: 45em;
