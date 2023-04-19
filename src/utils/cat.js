@@ -7,7 +7,7 @@
 const product_data = [
     {
       "id": "1",
-      "name": "Kari Line Art",
+      "name": "kari line art",
       "price": 300,
       "image": "https://i.ibb.co/BBf0nCM/4.jpg",
       "colors": [
@@ -22,7 +22,7 @@ const product_data = [
     },
     {
         "id": "2",
-        "name": "Wall Art",
+        "name": "wall art",
         "price": 300,
         "image": "https://i.ibb.co/fFf62HW/Artboard-3.png",
         "colors": [
@@ -38,7 +38,7 @@ const product_data = [
       },
     {
       "id": "3",
-      "name": "Handmade Fish Journal",
+      "name": "handmade fish journal",
       "price": 300,
       "image": "https://i.ibb.co/9bHjw9C/Notebook1.jpg",
       "colors": [
@@ -51,7 +51,7 @@ const product_data = [
     },
     {
       "id": "4",
-      "name": "Hand-Painted Radha Journal",
+      "name": "hand-painted radha journal",
       "price": 300,
       "image": "https://i.ibb.co/LYPmr8f/Notebook1.jpg",
       "colors": [
@@ -64,7 +64,7 @@ const product_data = [
     },
     {
       "id": "5",
-      "name": "Handmade Matsya(The Fish)",
+      "name": "handmade matsya(the fish)",
       "price": 300,
       "image": "https://i.ibb.co/3SnFHq8/Matsya.jpg",
       "colors": [
@@ -79,7 +79,7 @@ const product_data = [
     },
     {
       "id": "6",
-      "name": "Hand-Painted Guitar",
+      "name": "hand-painted guitar",
       "price": 300,
       "image": "https://i.ibb.co/MVnhW89/Notebook5.jpg",
       "colors": [
@@ -95,7 +95,7 @@ const product_data = [
   
     {
       "id": "8",
-      "name": "Hand-Painted Krishna Journal",
+      "name": "hand-painted krishna journal",
       "price": 300,
       "image": "https://i.ibb.co/T1H8G3Q/Notebook4.jpg",
     
@@ -110,7 +110,7 @@ const product_data = [
     },
     {
       "id": "9",
-      "name": "Hand-Painted A5 Notebooks",
+      "name": "hand-painted a5 notebooks",
       "price": 300,
       "image": "https://i.ibb.co/ZgvQK8n/Artboard-3-copy.png",
       "featured": true,
@@ -125,7 +125,7 @@ const product_data = [
     },
     {
       "id": "10" ,
-      "name": "Handmade Duck Journal",
+      "name": "handmade duck journal",
       "price": 300,
       "image": "https://i.ibb.co/qd8KtCw/Notebook8.jpg",
       "colors": [
@@ -140,7 +140,7 @@ const product_data = [
     
     {
       "id": "12" ,
-      "name": "Handmade Lotus Mandala",
+      "name": "handmade lotus mandala",
       "price": 300,
       "image": "https://i.ibb.co/F4sqWr5/Notebook10.jpg",
       "colors": [
@@ -153,7 +153,7 @@ const product_data = [
     },
     {
       "id": "13" ,
-      "name": "Hand-Painted Bird Art",
+      "name": "hand-painted bird art",
       "price": 300,
       "image": "https://i.ibb.co/jgxL3sx/Notebook22.webp",
       "colors": [
@@ -165,7 +165,7 @@ const product_data = [
     },
     {
       "id": "14" ,
-      "name": "Hand-Painted Soma Art",
+      "name": "hand-painted soma art",
       "price": 300,
       "image": "https://i.ibb.co/XZg91FH/Notebook20.webp",
       "colors": [
@@ -178,7 +178,7 @@ const product_data = [
     },
     {
       "id": "15" ,
-      "name": "Hand-Painted Radha-Krishna",
+      "name": "hand-painted radha-krishna",
       "price": 300,
       "image": "https://i.ibb.co/nLj05FD/Notebook18.webp",
       "colors": [
@@ -207,7 +207,7 @@ const product_data = [
     },
     {
       "id": "18" ,
-      "name": "Hand-Painted Vivah Journal",
+      "name": "hand-painted vivah journal",
       "price": 300,
       "image": "https://i.ibb.co/GVMQmFg/Notebook13.webp",
       
@@ -220,7 +220,7 @@ const product_data = [
     },
     {
       "id": "20" ,
-      "name": "Paper Mache Handcrafted",
+      "name": "paper mache handcrafted",
       "price": 300,
       "image": "https://i.ibb.co/M9RgHpg/Artboard-3-copy-2.png",
       "featured":true,
