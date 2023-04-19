@@ -18,9 +18,9 @@ const Services = () => {
         <p>Art is a mode of expression for human thought. In the Indian context, art emerged when humans painted on mud surfaces through twigs, fingers or bone points. These methods also define the origin of Madhubani.
         <br></br>MYTHILA IS IMMENSELY PROUD TO PRESENT MADHUBANI TO YOU!</p>
       </article>
-      <div className='services-center' data-aos="flip-up">
+      <div className='services-center' >
         {services.map((service)=>{
-           return <article key={service.id} className="service">
+           return <article key={service.id} className="service" data-aos="flip-up">
             <span className='icon'>{service.icon}</span>
             <h4>{service.title}</h4>
             <p>{service.text}</p>
