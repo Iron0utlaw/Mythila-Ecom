@@ -30,10 +30,13 @@ const Contact = () => {
       <div className='typewrap'>
     <div className='type'>
       <h1>Products Sold</h1>
+      <div className='underline'></div>
       <span id="type-2" ref={codeRef}></span>
+      
     </div>
     <div className='type'>
       <h1>Total Customers</h1>
+      <div className='underline'></div>
       <span id="type-1" ref={partRef}></span>
     </div>
     </div>

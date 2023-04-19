@@ -218,6 +218,15 @@ html{
   background:none !important;
   width: 7.5rem !important;
 }
+.underline{
+  width: 6rem;
+  height: 0.25rem;
+  background: #49a6e9;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .title .underline {
   width: 6rem;
   height: 0.25rem;
@@ -238,6 +247,8 @@ html{
 #type-2 {
     font-weight: 900;
     font-size: 2.4rem;
+    margin-top: 100rem;
+    
 }
 @media (max-width:440px) {
   .type h1{
