@@ -70,7 +70,7 @@ const data=[
   "reviews": 25,
   "stars": 4.9,
   "name": "Kari Line Art",
-  "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+  "description": "This trendy showpiece is intricately designed using monochromatic line art and uses its detailed features to represent the symbol of luck, nobility and prosperity - the elephant. Elephants are also considered as a Hindu sacred animal. The painting therefore makes elegant use of Mithila Art to depict elephants in nature.",
   "company": "mythila"
 
 }
@@ -148,7 +148,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Wall Art",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "These wall art pieces are designed to showcase the elegant flora and fauna present around us. Various folk cultures and traditions assign symbolic meanings to them including the illustration of youthful innocence and humility. With the use of sophisticated features of Madhubani Art, the vibrance of nature is portrayed.",
     "company": "mythila"
   
   }
@@ -229,7 +229,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Handmade Fish Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This beautiful composition notebook has been handcrafted by the artists of Bihar. Fish, symbolized as the faithful submerged in the waters of life, is handmade on this soft cover to let you express your creativity in any way you want. Feel free to doodle your way through the journal or use the soft cover as a poster in your room!",
     "company": "mythila"
   
   }
@@ -333,7 +333,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Radha Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This graceful creation notebook is easily accessible for work and travel. In the bhakti (devotional) movement of Vaishnavism, the female, Radha, is sometimes interpreted as portraying the human soul as depicted by her joyful nature on this cover and her male counterpart, Lord Krishna symbolizes God.",
     "company": "mythila"
   
   }
@@ -428,7 +428,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Handmade Matsya(The Fish)",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This colorful Madhubani Journal is inspired by a digital drawing of Matsya or the Fish which represents fertility, luck and prosperity. Madhubani, being one of the most famous traditional art forms in our country’s history, represents real-life aspects beautifully with a touch of our Indian heritage.",
     "company": "mythila"
   }
   ,
@@ -510,7 +510,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Guitar",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This fancy composition journal represents survival and the joy of life - a guitar. The modern depiction of music, combined with the rich Madhubani art form transforms this piece into a scrapbook or sketchbook where you can save your beautiful moments. You can also take this journal with you to capture your travel diaries.",
     "company": "mythila"
   
   }
@@ -620,7 +620,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Krishna Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This classy composition notebook has been handcrafted to showcase Lord Krishna - the god of protection, compassion, tenderness, and love. His love for music and playing the flute is illustrated in this soft cover journal, and your ideas, poetry and love for writing can be expressed in this journal too!",
     "company": "mythila"
   
   }
@@ -724,7 +724,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted A5 Notebooks",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "These hand-painted A5 notebooks can be used as journals, notebooks, sketchbooks, or albums to stick travel photos onto to make a collage and reliving your most special memories! The covers have special and unique paintings just for you. You can carry them in style and get compliments everywhere you go!",
     "company": "mythila"
   
   }
@@ -828,7 +828,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name":"Handmade Duck Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "Ducks, with playful and cheerful disposition symbolize a care-free nature and depict the small delights in life. You too can express your thoughts and feelings in this Mithila handcrafted journal and carry this compact-sized notebook around to your favorite places. Make sure to grab one today!",
     "company": "mythila"
   
   }
@@ -932,7 +932,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Handmade Lotus Mandala",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This crafty Madhubani composition of lotus flower is a symbol of rising above the material world. It's a way to reach a new level of union with the spiritual universe. Just as lotus carries this significance, we invite you to use planner to write poems, stories and memories of your own!",
     "company": "mythila"
   
   }
@@ -1037,7 +1037,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Bird Art",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This fashionate creation of birds, which usually symbolize longevity, grace and freedom, is an impeccable use of Madhubani Art to show the life of nature and the purity of it. You can use these journals however you want and even use the cover as an art piece on its own to hang around in your office!",
     "company": "mythila"
   
   }
@@ -1142,7 +1142,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Soma Art",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This elegant art piece notebook merges the symbol of the moon - representing the cyclical nature of life along with the unique handmade art, curated especially by Madhubani artists for our creative customers. You can easily use it for free writings, doodles, paintings and poetry writings!",
     "company": "mythila"
   
   }
@@ -1246,7 +1246,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Radha-Krishna",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "Radha-Krishna symbolize divine love and sacrifice, they represent the union of two vibrant deities. You can gift this intricate journal to your loved ones and let the creative juices flow wild and free as they make use of it to paint, sketch and doodle! Feel free to frame the artwork once you’re done with the notebook.",
     "company": "mythila"
   
   }
@@ -1352,7 +1352,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Surya Art",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "Just as the Sun illuminates our topsy-turvy world, you can also illuminate your own world by using this pretty Surya composition notebook and using your calligraphy, artistic, sketching, or poetry skills to build a personal world inside this crafty notebook. This authentic design is single made by hand.",
     "company": "mythila"
   
   }
@@ -1459,7 +1459,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Hand-Painted Vivah Journal",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This impeccable artpiece journal can be carried in style and compliments everywhere you go! Its handy size makes it travel-friendly while the blank pages allow space for freedom of expression. Feel free to frame the artwork once you’re done with the notebook to adorn your walls!",
     "company": "mythila"
   
   }
@@ -1646,7 +1646,7 @@ const data=[
     "reviews": 25,
     "stars": 4.9,
     "name": "Paper Mache Handcrafted",
-    "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "description": "This beautifully handcrafted paper mache uses composite materials consisting of paper pieces of pulp reinforced with textiles, to create the most flawless showpieces which you can keep for home decor and adorn showcasing traditional Madhubani art culture. Make sure to buy one for yourself today!",
     "company": "mythila"
   
   }
