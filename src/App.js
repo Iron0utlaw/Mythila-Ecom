@@ -53,7 +53,7 @@ function App() {
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
-       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila' avatar={logom} statusMessage="We'll reply as soon as we can"/>
+       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila'  darkMode="true" avatar={logom} statusMessage="We'll reply as soon as we can"/>
     {showbutton &&<VscTriangleUp className='up' onClick={handleClick} />}
        <Footer/>
      </Router>
