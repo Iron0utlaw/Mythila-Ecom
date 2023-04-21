@@ -10,10 +10,17 @@ import { useUserContext } from './context/user_context'
 import logom from './assets/logom.png'
 import Avatar from './assets/Avatar.jpeg';
 import { VscTriangleUp } from "react-icons/vsc";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 
 
 
 function App() {
+  useEffect(()=>{
+    AOS.init({duration:500});
+},[])
   
   const [flag,setFlag]=useState(false);
   const {myUser}=useUserContext();
@@ -53,8 +60,8 @@ function App() {
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
-       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila'  darkMode="true" avatar={logom} statusMessage="We'll reply as soon as we can"/>
-    {showbutton &&<VscTriangleUp className='up' onClick={handleClick} />}
+       <FloatingWhatsApp phoneNumber='9811825574' accountName='Mythila'  darkMode="true" avatar={logom} statusMessage="We'll reply as soon as we can" />
+    {showbutton &&<VscTriangleUp className='up' onClick={handleClick} data-aos="fade-left"  size={60}/>}
        <Footer/>
      </Router>
    
