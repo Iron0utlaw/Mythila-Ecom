@@ -56,6 +56,16 @@ const updateSort=(e)=>{
   dispatch({type:UPDATE_SORT,payload:value});
 
 }
+const update=(e)=>{
+  let name=e.target.name;
+  let value=e.target.value;
+  console.log("f");
+  console.log(name);
+  console.log(value);
+  console.log("f")
+  dispatch({type:UPDATE_FILTERS,payload:{name,value}});
+
+}
 const updateFilters=(e)=>{
   let name=e.target.name;
   let value=e.target.value;
@@ -80,7 +90,7 @@ const clearFilters=()=>{
   dispatch({type: CLEAR_FILTERS})
 }
   return (
-    <FilterContext.Provider value={{...state,setGridView,setListView,updateSort,updateFilters,clearFilters}}>
+    <FilterContext.Provider value={{...state,setGridView,setListView,updateSort,updateFilters,clearFilters,update}}>
       {children}
     </FilterContext.Provider>
   )

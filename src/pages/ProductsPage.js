@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Filters, ProductList, Sort, PageHero } from '../components'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 
 const ProductsPage = () => {
+  
   return <motion.main
   initial={{ width: "0vw", x: "100vw" }}
       animate={{ width: "100vw", x: 0 }}

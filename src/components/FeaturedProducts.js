@@ -8,10 +8,12 @@ import Product from './Product'
 import { useCartContext } from '../context/cart_context'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useFilterContext } from '../context/filter_context'
 
 
 
 const FeaturedProducts = () => {
+  const {updateFilters}=useFilterContext();
   useEffect(()=>{
     AOS.init({duration:1000});
 },[]);
