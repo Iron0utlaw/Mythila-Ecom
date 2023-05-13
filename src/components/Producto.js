@@ -3,14 +3,16 @@ import styled from 'styled-components'
 import { formatPrice } from '../utils/helpers'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import {useFilterContext} from '../context/filter_context'
 
-const Product = ({image,name,id,price}) => {
+const Producto = ({image,name,id,price,category}) => {
+  const {update}=useFilterContext();
   return <Wrapper>
     <div className='container'>
       <img src={image} alt={name}/>
-      <Link to={`/products/${id}`} className='link link-shop'>
+      <Link to={`/products`} className='link link-shop'>
         {/* <FaSearch/> */}
-        <button className='btn btn-shop'>Shop Now</button>
+        <button className='btn btn-shop' name='category' value={category} onClick={update}>Shop Now</button>
       </Link>
     </div>
     <footer>
@@ -75,4 +77,4 @@ const Wrapper = styled.article`
     letter-spacing: var(--spacing);
   }
 `
-export default Product
+export default Producto

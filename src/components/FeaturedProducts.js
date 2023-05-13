@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
-import Product from './Product'
+import Producto from './Producto'
 import { useCartContext } from '../context/cart_context'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -13,7 +13,7 @@ import { useFilterContext } from '../context/filter_context'
 
 
 const FeaturedProducts = () => {
-  const {updateFilters}=useFilterContext();
+
   useEffect(()=>{
     AOS.init({duration:1000});
 },[]);
@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
     </div>
     <div className='section-center featured' data-aos="zoom-in">
       {featured.slice(0,3).map((product) =>{
-        return <Product key={product.id} {...product}/>
+        return <Producto key={product.id} {...product}/>
       })}
     </div>
     <Link to='/products' className='btn'>All Products</Link>
