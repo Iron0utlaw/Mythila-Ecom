@@ -12,7 +12,7 @@ const Producto = ({image,name,id,price,category}) => {
       <img src={image} alt={name}/>
       <Link to={`/products`} className='link link-shop'>
         {/* <FaSearch/> */}
-        <button className='btn btn-shop' name='category' value={category} onClick={update}>Shop Now</button>
+        <button className='btn btn-shop' name='category' value={category} onClick={update}>Explore</button>
       </Link>
     </div>
     <footer>
