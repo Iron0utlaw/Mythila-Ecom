@@ -8,6 +8,7 @@ import { FilterProvider } from './context/filter_context';
 import { CartProvider } from './context/cart_context';
 import { UserProvider } from './context/user_context';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { ChakraProvider } from '@chakra-ui/react';
 
 import { SupabaseProvider } from './context/SupabaseContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //MblV4zFByuXz2RQO7H9oNpIt6ux4uP5C      client id 
 root.render(
     <SupabaseProvider>
+        <ChakraProvider>
     <Auth0Provider domain='dev-3c82xj2f66zfey7k.us.auth0.com' clientId='MblV4zFByuXz2RQO7H9oNpIt6ux4uP5C' redirectUri={window.location.origin} 
     cacheLocation='localstorage'>
         <UserProvider>
@@ -27,5 +29,6 @@ root.render(
 </ProductsProvider>
 </UserProvider>
 </Auth0Provider>
+</ChakraProvider>
 </SupabaseProvider>
 );

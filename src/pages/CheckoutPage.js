@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { PageHero, StripeCheckout } from '../components'
 import { motion } from 'framer-motion'
 // extra imports
 import { useCartContext } from '../context/cart_context'
 import { Link } from 'react-router-dom'
-
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Flex,
+  Input,
+  Button,
+  Textarea
+} from '@chakra-ui/react'
 const CheckoutPage = () => {
   
   // console.log(process.env.REACT_APP_SUPABASE_KEY);
@@ -15,7 +24,27 @@ const CheckoutPage = () => {
   const amount=cart.total_amount*100;
   const currency="INR";
   const receiptId="qwsaq1";
+  const [formData, setFormData] = useState({
+    Name: "",
+    email:"",
+    contact:"", 
+    address:"",
 
+  });
+  const [details,setDetails]=useState({});
+  const [flag,setFlag]=useState(false);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit=async(e)=>{
+    e.preventDefault();
+setDetails(formData);
+setFlag(true);
+  }
   const paymentHandler=async(e)=>{
     const Names=cart.cart.map((item)=>{return item.name});
     const response=await fetch("http://localhost:5000/order",{
@@ -47,12 +76,12 @@ const CheckoutPage = () => {
           alert(response.razorpay_signature)
       },
       "prefill": {
-          "name": "Gaurav Kumar",
-          "email": "gaurav.kumar@example.com",
-          "contact": "9000090000"
+          "name": `${formData.Name}`,
+          "email": `${formData.email}`,
+          "contact": `${formData.contact}`,
       },
       "notes": {
-          "address": "RZF",
+          "address": `${formData.address}`,
           "Products":JSON.stringify(Names),
       },
       "theme": {
@@ -75,9 +104,30 @@ const CheckoutPage = () => {
     
   return <motion.main>
     <PageHero title='checkout'></PageHero>
-    <Wrapper className='page'>
+    <Wrapper className='page w-[100%]'>
       <h1>Checkout here</h1>
-      <button onClick={paymentHandler}>Pay</button>
+      {
+        !flag? <Flex justify="center"   className="flex">
+        <form onSubmit={handleSubmit} className="form">
+       <FormControl>
+ 
+     <FormLabel>Enter Your Name</FormLabel>
+     <Input type='text' name="Name" value={formData.Name}    onChange={handleInputChange} placeholder='Your Name'  />
+     <FormLabel>Enter Your Email</FormLabel>
+     <Input type='email'  name='email' value={formData.email} onChange={handleInputChange} placeholder='Your Email'/>
+     <FormLabel>Address</FormLabel>
+     <Textarea placeholder='Describe the item' name='address' value={formData.address} onChange={handleInputChange} />
+     <FormLabel>Contact</FormLabel>
+     <Input type='number' name='contact' value={formData.contact} onChange={handleInputChange} placeholder='Price of Item'/>
+     
+ 
+   
+   </FormControl>
+   <Button type='submit' onClick={handleSubmit}>Submit</Button>
+   </form>
+</Flex>:
+      <Button onClick={paymentHandler}>Pay</Button>
+}
     </Wrapper>
   </motion.main>
 }

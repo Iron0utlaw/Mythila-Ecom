@@ -272,3 +272,13 @@ html{
   }
   
 }
+.flex{
+  width: 60%;
+  margin: 0 auto;
+}
+.form{
+  width: 100%;
+}
+.category{
+  margin-bottom: 1.2rem;
+}
