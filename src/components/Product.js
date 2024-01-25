@@ -3,8 +3,17 @@ import styled from 'styled-components'
 import { formatPrice } from '../utils/helpers'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { useSupabase } from '../context/SupabaseContext'
+import Loading from './Loading'
 
 const Product = ({image,name,id,price}) => {
+  const {tableData,loading}=useSupabase();
+
+  if(loading){
+    return <Loading/>
+  }
+  // console.log(tableData);
+  
   return <Wrapper>
     <div className='container'>
       <img src={image} alt={name}/>
