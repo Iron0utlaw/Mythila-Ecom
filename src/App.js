@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router,Route} from 'react-router-dom'
 import { Navbar, Sidebar, Footer, Loading } from './components'
 import styled from 'styled-components'
 import { useEffect,useState } from 'react'
@@ -11,7 +11,9 @@ import logom from './assets/logom.png'
 import Avatar from './assets/Avatar.jpeg';
 import { VscTriangleUp } from "react-icons/vsc";
 import AOS from 'aos'
+import { toast, ToastContainer } from 'react-toastify';
 import 'aos/dist/aos.css'
+import PaymentSuc from './pages/PaymentSuc'
 
 
 
@@ -56,7 +58,7 @@ function App() {
   
      <div>
      <Router>
- 
+
        <Navbar/>
        <Sidebar/>
        <AnimatedRoutes/>
@@ -64,7 +66,7 @@ function App() {
     {showbutton &&<VscTriangleUp className='up' onClick={handleClick} data-aos="fade-left"  size={60}/>}
        <Footer/>
      </Router>
-   
+   <ToastContainer/>
 
 
  

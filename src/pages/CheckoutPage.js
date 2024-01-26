@@ -3,8 +3,11 @@ import styled from 'styled-components'
 import { PageHero, StripeCheckout } from '../components'
 import { motion } from 'framer-motion'
 // extra imports
+import { useToast } from '@chakra-ui/react'
 import { useCartContext } from '../context/cart_context'
 import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
+import '../index.css'
 import {
   FormControl,
   FormLabel,
@@ -15,11 +18,20 @@ import {
   Button,
   Textarea
 } from '@chakra-ui/react'
+import { toast, ToastContainer } from 'react-toastify';
+import { Redirect } from 'react-router-dom';
+
+
+import 'react-toastify/dist/ReactToastify.css';
+
 const CheckoutPage = () => {
   
   // console.log(process.env.REACT_APP_SUPABASE_KEY);
-  
+
   const cart=useCartContext();
+  const history=useHistory();
+  const {clearCart}=useCartContext();
+
   console.log(cart);
   const amount=cart.total_amount*100;
   const currency="INR";
@@ -33,6 +45,15 @@ const CheckoutPage = () => {
   });
   const [details,setDetails]=useState({});
   const [flag,setFlag]=useState(false);
+  const [payment,setPayment]=useState(false);
+  const [heading,setHeading]=useState("Enter Your Details");
+  const isValidEmail = (email) => {
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+  
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -42,7 +63,20 @@ const CheckoutPage = () => {
   };
   const handleSubmit=async(e)=>{
     e.preventDefault();
+    if (!formData.Name || !formData.email || !formData.address || !formData.contact) {
+      toast.error("Please Fill All The Fields",{
+        position: "bottom-right"
+      });
+      return 
+    }
+    if(!isValidEmail(formData.email)){
+      toast.error("Please type a valid email",{
+        position: "bottom-right"
+      });
+      return
+    }
 setDetails(formData);
+setHeading("PAYMENT")
 setFlag(true);
   }
   const paymentHandler=async(e)=>{
@@ -59,6 +93,7 @@ setFlag(true);
         "Content-Type":"application/json",
       }
     })
+    console.log(response);
 
     const order=await response.json();
     console.log(order);
@@ -70,11 +105,27 @@ setFlag(true);
       "description": "Test Transaction",
       "image": "https://example.com/your_logo",
       "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-      "handler": function (response){
-          alert(response.razorpay_payment_id);
-          alert(response.razorpay_order_id);
-          alert(response.razorpay_signature)
-      },
+      "handler": async function (response){
+        const body={
+          ...response
+        }
+       const validateRes= await fetch("http://localhost:5000/order/validate",{
+          method:"POST",
+          body:JSON.stringify(body),
+          headers:{
+            "Content-Type":"application/json",
+          }
+
+        })
+        const jsonRes=await validateRes.json();
+        console.log(jsonRes);
+        if(jsonRes.msg==='success'){
+          clearCart();
+        history.push('/paymentsuc');
+         
+        }
+        
+      },//
       "prefill": {
           "name": `${formData.Name}`,
           "email": `${formData.email}`,
@@ -105,28 +156,60 @@ setFlag(true);
   return <motion.main>
     <PageHero title='checkout'></PageHero>
     <Wrapper className='page w-[100%]'>
-      <h1>Checkout here</h1>
+      <h1 className='checkoutheading'>{heading}</h1>
       {
-        !flag? <Flex justify="center"   className="flex">
-        <form onSubmit={handleSubmit} className="form">
-       <FormControl>
- 
-     <FormLabel>Enter Your Name</FormLabel>
-     <Input type='text' name="Name" value={formData.Name}    onChange={handleInputChange} placeholder='Your Name'  />
-     <FormLabel>Enter Your Email</FormLabel>
-     <Input type='email'  name='email' value={formData.email} onChange={handleInputChange} placeholder='Your Email'/>
-     <FormLabel>Address</FormLabel>
-     <Textarea placeholder='Describe the item' name='address' value={formData.address} onChange={handleInputChange} />
-     <FormLabel>Contact</FormLabel>
-     <Input type='number' name='contact' value={formData.contact} onChange={handleInputChange} placeholder='Price of Item'/>
-     
- 
-   
-   </FormControl>
-   <Button type='submit' onClick={handleSubmit}>Submit</Button>
-   </form>
-</Flex>:
-      <Button onClick={paymentHandler}>Pay</Button>
+        !flag?  <div className="flex" style={{ display: 'flex', justifyContent: 'center' }}>
+      <form onSubmit={handleSubmit} className="form" style={{ width: '100%', maxWidth: '400px' }}>
+        <div className="form-control">
+          <label htmlFor="name">Enter Your Name</label>
+          <input
+            type='text'
+            id="name"
+            name="Name"
+            value={formData.Name}
+            onChange={handleInputChange}
+            placeholder='Your Name'
+          />
+        </div>
+        <div className="form-control">
+          <label htmlFor="email">Enter Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name='email'
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder='Your Email'
+          />
+        </div>
+        <div className="form-control">
+          <label htmlFor="address">Address</label>
+          <textarea
+            id="address"
+            placeholder='Describe the item'
+            name='address'
+            value={formData.address}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="form-control ">
+          <label htmlFor="contact">Contact</label>
+          <input
+            type='number'
+            id="contact"
+            name='contact'
+            value={formData.contact}
+            onChange={handleInputChange}
+            placeholder='Price of Item'
+          />
+        </div>
+        <button type='submit' className='submit' onClick={handleSubmit}>Submit</button>
+        <ToastContainer/>
+      </form>
+    </div>:
+<div className='paybut'>
+      <button className='buttonpay' onClick={paymentHandler} >Pay {cart.total_amount}</button>
+      </div>
 }
     </Wrapper>
   </motion.main>

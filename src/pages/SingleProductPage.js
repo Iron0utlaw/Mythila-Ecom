@@ -80,34 +80,34 @@ const SingleProductPage = () => {
 }
 const Wrapper = styled.main`
   .product-center {
-    display: grid;
-    gap: 4rem;
-    margin-top: 2rem;
+    display: grid !important;
+    gap: 4rem !important;
+    margin-top: 2rem !important;
   }
   .price {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-5) !important;
   }
   .desc {
-    line-height: 2;
-    max-width: 45em;
+    line-height: 2 !important;
+    max-width: 45em !important;
   }
   .info {
-    text-transform: capitalize;
-    width: 300px;
-    display: grid;
-    grid-template-columns: 125px 1fr;
+    text-transform: capitalize !important;
+    width: 300px !important;
+    display: grid !important;
+    grid-template-columns: 125px 1fr !important;
     span {
-      font-weight: 700;
+      font-weight: 700 !important;
     }
   }
 
   @media (min-width: 992px) {
     .product-center {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+      grid-template-columns: 1fr 1fr !important;
+      align-items: center !important;
     }
     .price {
-      font-size: 1.25rem;
+      font-size: 1.25rem !important;
     }
   }
 `

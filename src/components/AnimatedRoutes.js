@@ -2,6 +2,7 @@ import React from 'react'
 import {Home,Products,SingleProduct,Error,About,Cart,Checkout,PrivateRoute,AuthWrapper} from '../pages' 
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import PaymentSuc from '../pages/PaymentSuc'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -14,6 +15,7 @@ function AnimatedRoutes() {
         <Route exact path='/cart'> <Cart/> </Route>
         <PrivateRoute exact path='/checkout'> <Checkout/> </PrivateRoute>
         <Route exact path='/products'> <Products/> </Route>
+        <Route exact path='/paymentsuc'><PaymentSuc></PaymentSuc></Route>
         <Route exact path='/products/:id' children={<SingleProduct/>}/> 
         <Route exact path='*'> <Error/> </Route>
       </Switch>
