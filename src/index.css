@@ -390,3 +390,9 @@ input[type='number']:focus {
   background-color: #45a049; /* Darker green on hover */
 }
 
+.order{
+  width: 80%;
+  margin: 0 auto;
+  min-height: 80vh;
+  margin-top: 1.5rem;
+}

@@ -3,8 +3,14 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/Artboard.png'
 import heroBcg2 from '../assets/Artboard2.png'
+import { useUserContext } from '../context/user_context'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Hero = () => {
+  const {user}=useAuth0();
+  console.log(user);
+  
+
   return <Wrapper className='section-center'>
     <article className='content'>
       <h1>Authentic In <br/>Nature</h1>

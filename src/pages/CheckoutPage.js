@@ -23,14 +23,19 @@ import { Redirect } from 'react-router-dom';
 
 
 import 'react-toastify/dist/ReactToastify.css';
+import { useAuth0 } from '@auth0/auth0-react'
+import { useSupabase } from '../context/SupabaseContext'
 
 const CheckoutPage = () => {
   
+  const {user}=useAuth0();
+  console.log(user);
   // console.log(process.env.REACT_APP_SUPABASE_KEY);
 
   const cart=useCartContext();
   const history=useHistory();
   const {clearCart}=useCartContext();
+  const {updateUserProduct,tableData}=useSupabase();
 
   console.log(cart);
   const amount=cart.total_amount*100;
@@ -120,6 +125,7 @@ setFlag(true);
         const jsonRes=await validateRes.json();
         console.log(jsonRes);
         if(jsonRes.msg==='success'){
+          updateUserProduct(user,cart);
           clearCart();
         history.push('/paymentsuc');
          
@@ -152,7 +158,11 @@ setFlag(true);
   rzp1.open();
     e.preventDefault();
   }
-    
+  const handle=async()=>{
+    await  updateUserProduct(user,cart);
+
+  }
+    console.log(tableData);
   return <motion.main>
     <PageHero title='checkout'></PageHero>
     <Wrapper className='page w-[100%]'>
@@ -209,6 +219,7 @@ setFlag(true);
     </div>:
 <div className='paybut'>
       <button className='buttonpay' onClick={paymentHandler} >Pay {cart.total_amount}</button>
+      
       </div>
 }
     </Wrapper>
