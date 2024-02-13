@@ -112,7 +112,7 @@ setFlag(true);
       "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       "handler": async function (response){
         const body={
-          ...response
+          ...response //
         }
        const validateRes= await fetch("https://mythila.onrender.com/order/validate",{
           method:"POST",
