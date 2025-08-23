@@ -7,11 +7,9 @@ import { useSupabase } from '../context/SupabaseContext'
 import Loading from './Loading'
 
 const Product = ({image,name,id,price}) => {
-  const {tableData,loading}=useSupabase();
 
-  if(loading){
-    return <Loading/>
-  }
+
+
   // console.log(tableData);
   
   return <Wrapper>
