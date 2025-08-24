@@ -87,7 +87,7 @@ setFlag(true);
   }
   const paymentHandler=async(e)=>{
     const Names=cart.cart.map((item)=>{return item.name});
-    const response=await fetch("http://localhost:5000/order",{
+    const response=await fetch("https://mythila.onrender.com/order",{
       method:"POST", 
       body:JSON.stringify({
         amount,
@@ -124,7 +124,7 @@ setFlag(true);
   })),
   amount: cart.total_amount
         }
-       const validateRes= await fetch("http://localhost:5000/order/validate",{
+       const validateRes= await fetch("https://mythila.onrender.com/order/validate",{
           method:"POST",
           body:JSON.stringify(body),
           headers:{
