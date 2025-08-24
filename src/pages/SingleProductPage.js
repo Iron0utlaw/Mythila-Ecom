@@ -14,6 +14,7 @@ import {
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Product from '../components/Product'
+import { BsArrowLeft } from 'react-icons/bs';
 
 const SingleProductPage = () => {
   const {id}=useParams();
@@ -48,7 +49,7 @@ const SingleProductPage = () => {
   <Wrapper>
     <PageHero title={name} product></PageHero>
     <div className="section section-center">
-      <Link to="/products" className='btn'>back to products</Link>
+      <Link to="/products" className='btn'><BsArrowLeft/> back to products</Link>
       <div className='product-center'>
         <ProductImages images={images}/>
         <section className='content'>
