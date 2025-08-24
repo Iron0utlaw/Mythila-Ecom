@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { PageHero, StripeCheckout } from '../components'
+import { Loading, PageHero, StripeCheckout } from '../components'
 import { motion } from 'framer-motion'
 // extra imports
 import { useToast } from '@chakra-ui/react'
@@ -30,6 +30,7 @@ const CheckoutPage = () => {
   
   const {user}=useAuth0();
   console.log(user);
+  const [loading, setLoading]= useState(false);
   // console.log(process.env.REACT_APP_SUPABASE_KEY);
 
   const cart=useCartContext();
@@ -86,7 +87,7 @@ setFlag(true);
   }
   const paymentHandler=async(e)=>{
     const Names=cart.cart.map((item)=>{return item.name});
-    const response=await fetch("https://mythila.onrender.com/order",{
+    const response=await fetch("http://localhost:5000/order",{
       method:"POST", 
       body:JSON.stringify({
         amount,
@@ -99,7 +100,7 @@ setFlag(true);
       }
     })
     console.log(response);
-
+   setLoading(true);
     const order=await response.json();
     console.log(order);
     var options = {
@@ -112,9 +113,18 @@ setFlag(true);
       "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       "handler": async function (response){
         const body={
-          ...response //
+          ...response ,
+           customerName: formData.Name,
+  email: formData.email,
+  address: formData.address,
+  contact: formData.contact,
+  items: cart.cart.map((item) => ({
+    name: item.name,
+    qty: item.amount,
+  })),
+  amount: cart.total_amount
         }
-       const validateRes= await fetch("https://mythila.onrender.com/order/validate",{
+       const validateRes= await fetch("http://localhost:5000/order/validate",{
           method:"POST",
           body:JSON.stringify(body),
           headers:{
@@ -122,9 +132,11 @@ setFlag(true);
           }
 
         })
+      
         const jsonRes=await validateRes.json();
         console.log(jsonRes);
         if(jsonRes.msg==='success'){
+          setLoading(false);
           updateUserProduct(user,cart);
           clearCart();
         history.push('/paymentsuc');
@@ -163,6 +175,9 @@ setFlag(true);
 
   }
     console.log(tableData);
+    if(loading){
+      return <Loading/>
+    }
   return <motion.main>
     <PageHero title='checkout'></PageHero>
     <Wrapper className='page w-[100%]'>
