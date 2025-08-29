@@ -14,6 +14,7 @@ import {
   GET_SINGLE_PRODUCT_SUCCESS,
   GET_SINGLE_PRODUCT_ERROR,
 } from '../actions'
+import { useSupabase } from './SupabaseContext';
 
 const initialState = {
   isSidebarOpen:false,
@@ -32,26 +33,45 @@ const ProductsContext = React.createContext()
 
 export const ProductsProvider = ({ children }) => {
   const [state,dispatch]=useReducer(reducer,initialState);
+  const {tableData,loading}= useSupabase()
   const openSidebar=()=>{
     dispatch({type: SIDEBAR_OPEN})
   }
   const closeSidebar=()=>{
     dispatch({type: SIDEBAR_CLOSE})
   }
+    useEffect(() => {
+    if (loading) {
+      dispatch({ type: GET_PRODUCTS_BEGIN });
+    } else if (tableData.length > 0) {
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: tableData });
+    } else if (!loading && tableData.length === 0) {
+      dispatch({ type: GET_PRODUCTS_ERROR });
+    }
+  }, [loading, tableData]);
 
   const fetchProducts = () =>{
     dispatch({type:GET_PRODUCTS_BEGIN})
-    try {
-      // const response = await axios.get(url)
-      // const products = response.data
-      const products=cat;
+    // try {
+    //   // const response = await axios.get(url)
+    //   // const products = response.data
+    //   const products=tableData;
+    //   // const products = cat;
     
 
      
-      dispatch({type:GET_PRODUCTS_SUCCESS, payload: products})
-    } catch (error) {
-      dispatch({type:GET_PRODUCTS_ERROR})
-    }
+    //   dispatch({type:GET_PRODUCTS_SUCCESS, payload: products})
+    // } catch (error) {
+    //   dispatch({type:GET_PRODUCTS_ERROR})
+    // }
+     dispatch({ type: GET_PRODUCTS_BEGIN });
+
+  if (!tableData || tableData.length === 0) {
+    // tableData not ready yet
+    return;
+  }
+
+  dispatch({ type: GET_PRODUCTS_SUCCESS, payload: tableData });
   }
   
   // const fetchSingleProduct=async(url)=>{
@@ -79,10 +99,15 @@ export const ProductsProvider = ({ children }) => {
     //   dispatch({type:GET_SINGLE_PRODUCT_ERROR});
 
     // }
-    const singleProduct=data.find(item=>item.id===id);
-    console.log(singleProduct); 
-    dispatch({type:GET_SINGLE_PRODUCT_SUCCESS,payload:singleProduct});
 
+
+  if (tableData.length === 0) {
+    // tableData not ready, wait
+    return;
+  }
+
+  const singleProduct = tableData.find(item => item.id === id);
+  dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
    
 
   }

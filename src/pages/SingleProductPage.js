@@ -15,16 +15,20 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Product from '../components/Product'
 import { BsArrowLeft } from 'react-icons/bs';
+import { useSupabase } from '../context/SupabaseContext'
 
 const SingleProductPage = () => {
   const {id}=useParams();
 
+  const {tableData} = useSupabase();
   const history=useHistory();
   const {single_product_loading:loading,single_product_error:error,single_product:product,fetchSingleProduct}=useProductsContext();
  useEffect(()=>{
-  fetchSingleProduct(id);
+    if (tableData.length > 0) {
+    fetchSingleProduct(id);
+  }
 
- },[id]);
+ },[id,tableData]);
  useEffect(()=>{
   if(error){
     setTimeout(()=>{
@@ -32,15 +36,19 @@ const SingleProductPage = () => {
     },3000);
   }
  },[error])
+ if (loading || !product.product_details) return <Loading />;
+
  if(loading){
   return <Loading/>
  }
  if(error){
   return <Error/>
  }
- const {name,price,description,stock,stars,reviews,id:sku,company,images}=product;
+//  const {name,price,description,stock,stars,reviews,id:sku,company,images}=product;
+ const { name, price, company,description,product_details, id: sku } = product;
+ const { stock, stars, reviews, images } = product_details;
  console.log(product)
-
+console.log("bhi",product_details)
  console.log(images);
  
   return (

@@ -1,1 +1,2 @@
 /api/* http://mythila-server-env.eba-xypstmpx.ap-south-1.elasticbeanstalk.com/:splat 200
+/* /index.html 200

@@ -15,7 +15,7 @@ export const useSupabase = () => useContext(SupabaseContext);
 
 export const SupabaseProvider = ({ children }) => {
     const supabase = createClient(
-      "https://dxpplwalsoawnmamajxq.supabase.co",
+      "https://oxcjhpacnlqmkdmabxxr.supabase.co",
       process.env.REACT_APP_SUPABASE_KEY
     );
     const Products="Products";
@@ -28,6 +28,7 @@ export const SupabaseProvider = ({ children }) => {
 
     const [orderLoading,setOrderLoading]=useState(true);
     const [userProduct,setUserProduct]=useState({});
+    const [instruments, setInstruments] = useState([]);
 
  
     const updateUserProduct=async(user,cart)=>{
@@ -93,28 +94,46 @@ export const SupabaseProvider = ({ children }) => {
 
 
     }
+      async function getInstruments() {
+    const { data } = await supabase.from("instruments").select();
+    setInstruments(data);
+  }
     useEffect(() => {
-        const fetchTableData = async () => {
-          try {
-            setLoading(true);
-            const { data, error } = await supabase
-              .from(Products)
-              .select("*")
-              .order("id");
-    
-            if (error) {
-              console.error("Error fetching data:", error.message);
-            } else {
-              setTableData(data || []);
-              setLoading(false);
-            }
-          } catch (error) {
-            console.error("Error:", error.message);
-          }
-        };
+   const fetchTableData = async () => {
+  try {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('products') // ✅ table name as string
+      .select(`
+        *,
+        product_details (
+          stock,
+          reviews,
+          stars,
+          colors,
+          images
+        )
+      `)
+      .order('id', { ascending: true });
+      
+
+    if (error) {
+      console.error('Error fetching data:', error.message);
+    } else {
+      setTableData(data || []);
+    }
+  } catch (error) {
+    console.error('Unexpected error:', error.message);
+  } finally {
+    setLoading(false);
+  }
+};
+
     
         fetchTableData();
+        // getInstruments();
       }, []);
+      console.log("supabbse se instru", tableData);
     return (
         <SupabaseContext.Provider
           value={{
