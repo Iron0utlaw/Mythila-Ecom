@@ -15,6 +15,7 @@ const Filters = () => {
   const companies=getUniqueValues(all_products,'company');
   const colors=getUniqueValues(all_products,'colors');
   console.log(categories);
+  console.log("oh bhai", category);
 
   return <Wrapper>
   <div className='content'>
@@ -33,7 +34,7 @@ const Filters = () => {
         </h5>
         <div>
           {categories.map((c,index)=>{
-            return <button key={index} onClick={updateFilters} name="category" type="button" className={`${category===c.toLowerCase()?'active':null}`}>
+            return <button key={index} onClick={updateFilters} name="category" type="button" className={`${category.toLowerCase()===c.toLowerCase()?'active':null}`}>
               {c}
             </button>
           })}

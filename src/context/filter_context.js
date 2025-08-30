@@ -71,6 +71,7 @@ const updateFilters=(e)=>{
   let value=e.target.value;
   if(name==='category'){
     value=e.target.textContent
+    console.log("hello",value);
     
   }
   if(name === 'color'){

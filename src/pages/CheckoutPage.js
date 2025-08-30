@@ -93,7 +93,7 @@ setFlag(true);
   }
   const paymentHandler=async(e)=>{
     const Names=cart.cart.map((item)=>{return item.name});
-    const response=await fetch("/api/order",{
+    const response=await fetch("http://mythila-server-env.eba-xypstmpx.ap-south-1.elasticbeanstalk.com/order",{
       method:"POST", 
       body:JSON.stringify({
         amount,
@@ -130,7 +130,7 @@ setFlag(true);
   })),
   amount: cart.total_amount
         }
-       const validateRes= await fetch("/api/order/validate",{
+       const validateRes= await fetch("http://mythila-server-env.eba-xypstmpx.ap-south-1.elasticbeanstalk.com/order/validate",{
           method:"POST",
           body:JSON.stringify(body),
           headers:{
@@ -172,8 +172,10 @@ setFlag(true);
           alert(response.error.reason);
           alert(response.error.metadata.order_id);
           alert(response.error.metadata.payment_id);
+          history.push("/payment-failed")
   });
   rzp1.open();
+
     e.preventDefault();
   }
   const handle=async()=>{
